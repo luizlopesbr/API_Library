@@ -4,6 +4,7 @@ import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
 
+
 const app = express();
 
 app.use(morgan("tiny"));//ver o que chega de requisição na aplicação
