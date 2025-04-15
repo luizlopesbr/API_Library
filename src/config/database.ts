@@ -1,4 +1,3 @@
-// db.ts ou database.ts
 import { Pool } from "pg"
 
 // Estendendo o escopo global
