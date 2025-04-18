@@ -1,0 +1,14 @@
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  author VARCHAR(255) NOT NULL,
+  available BOOLEAN NOT NULL DEFAULT TRUE,
+  borrow_date TIMESTAMP,
+  devolve_date TIMESTAMP
+);
+
+
+OBS: caso queira resetar a sequÊncia dos IDs
+
+    ALTER SEQUENCE books_id_seq RESTART WITH 1;
+
