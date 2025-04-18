@@ -6,7 +6,7 @@ Estudar a construção de uma API REST utilizando Typescript com POO no ambiente
 ## 📌 Sobre o Projeto
 A ideia da API é permite fazer o CRUD de um livro, assim como, efetuar operações de empréstimo e devolução.
 
-# 🏗 Arquitetura
+## 🏗 Arquitetura
 Back-End: Node
 Linguagem: Typescript
 Banco de Dados: PostgreSQL
@@ -24,7 +24,7 @@ Estrutura da API:
 + **app.ts** - Configuração da aplicação Express.
 + **server.ts** - Inicialização do servidor.
 
-# 📚 Bibliotecas Utilizadas
+## 📚 Bibliotecas Utilizadas
 1. express Função: O Express é um framework para Node.js que facilita a criação de servidores web e APIs RESTful. Ele fornece uma série de ferramentas e recursos para gerenciamento de rotas, middlewares, e sessões, tornando a construção de aplicações mais simples e rápida.
 
 2. helmet Função: Helmet é um middleware para Express que ajuda a proteger a aplicação contra algumas vulnerabilidades de segurança, configurando cabeçalhos HTTP de segurança, como Content-Security-Policy, X-Content-Type-Options, entre outros.
@@ -53,7 +53,7 @@ Estrutura da API:
 
 14. npx tsc --init Função: O comando npx tsc --init inicializa um novo projeto TypeScript criando um arquivo tsconfig.json. Esse arquivo contém as configurações do compilador TypeScript, permitindo definir opções como a versão ECMAScript, diretórios de entrada/saída, opções de módulo, entre outras.
 
-# 🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 1. Clone o repositório: git clone + URL do repositório
 
 2. Acesse a pasta do projeto: cd + pasta do repositório
