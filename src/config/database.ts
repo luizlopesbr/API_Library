@@ -15,7 +15,7 @@ async function connect() {
     }
 
     const client = await pool.connect()
-    console.log("Criou o pool de conexão")
+    console.log("Criou o pool de conexão!")
 
     const res = await client.query("select now()")
     console.log(res.rows[0])
