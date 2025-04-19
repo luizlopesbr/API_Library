@@ -71,5 +71,5 @@ SECRET = PALAVRA_SECRETA
 <br>
 5. Com tudo configurado, você pode iniciar o servidor com o seguinte comando: npm run dev
 
-O servidor será iniciado e a API estará disponível em http://localhost:3000.
+O servidor será iniciado e a API estará disponível em http://localhost:3000. (ou outra porta designada)
 
