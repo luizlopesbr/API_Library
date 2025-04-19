@@ -7,10 +7,10 @@ Estudar a construção de uma API REST utilizando Typescript com POO no ambiente
 A ideia da API é permite fazer o CRUD de um livro, assim como, efetuar operações de empréstimo e devolução.
 
 ## 🏗 Arquitetura
-Back-End: Node
-Linguagem: Typescript
-Banco de Dados: PostgreSQL
-Frameworks: Express 
++ **Back-End:** Node
++ **Linguagem:** Typescript
++ **Banco de Dados:** PostgreSQL
++ **Frameworks:** Express 
 
 Estrutura da API:
 **src/**
