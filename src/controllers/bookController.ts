@@ -15,6 +15,16 @@ export class BookController {
     res.json(book);
   }
 
+  // async getById(req: Request, res: Response) {
+  //   const id = Number(req.params.id);
+  //   try {
+  //     const book = await service.findById(id);
+  //     res.json(book);
+  //   } catch (error: any) {
+  //     res.status(500).json({ message: error.message });
+  //   }
+  // }
+
   async create(req: Request, res: Response) {
     const { title, author } = req.body;
     const book = await service.create(title, author);
@@ -54,6 +64,22 @@ export class BookController {
   async devolve(req: Request, res: Response) {
     const id = Number(req.params.id);
     await service.devolve(id);
-    res.json({ message: "Book returned" });
+    res.json({ message: "Book devolved" });
   }
+
+  async lastLoan(req: Request, res: Response) {
+    const id = Number(req.params.id);
+    try {
+      const duration = await service.getLoanDuration(id);
+  
+      if (duration === null) {
+        return res.status(400).json({ message: "Book was never borrowed" });
+      }
+  
+      res.json({ message: `Book was borrowed for ${duration} day(s)` });
+    } catch (error: any) {
+      res.status(500).json({ message: error.message });
+    }
+  }
+  
 }
