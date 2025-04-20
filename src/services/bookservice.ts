@@ -1,4 +1,3 @@
-// services/BookService.ts
 import { BookRepository } from "../repositories/bookRepository";
 
 export class BookService {
@@ -40,5 +39,12 @@ export class BookService {
     const book = await this.findById(id);
     book.devolve();
     await this.repository.update(book);
+  }
+
+  async getLoanDuration(id: number): Promise<number | null> {
+    const book = await this.repository.findById(id);
+    if (!book) throw new Error("Book not found");
+
+    return book.getBorrowDuration();
   }
 }
